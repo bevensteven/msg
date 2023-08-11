@@ -1,0 +1,18 @@
+{
+  "resourceName": "msgdynamo",
+  "tableName": "msgdynamo",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "gsi": [
+    {
+      "name": "date",
+      "partitionKey": {
+        "fieldName": "date",
+        "fieldType": "number"
+      }
+    }
+  ],
+  "triggerFunctions": []
+}
